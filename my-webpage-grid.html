@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page with SimpleGrid</title>
+    <link rel="stylesheet" href="simplegrid.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            margin-bottom: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background: #333;
+        }
+
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f4f4f4;
+        }
+
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .subject {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .subject img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .subject {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .subject {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="grid">
+        <div class="col-12">
+            <h1>Welcome to My Web Page</h1>
+        </div>
+    </header>
+    <nav class="grid">
+        <div class="col-12">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-webpage.html">Plain HTML Version</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="grid">
+        <section class="col-12">
+            <h2>Intro</h2>
+            <p>My name is Tshepiso Freddy Thosago.</p>
+            <img src="th.jpg" alt="Photo of Table Mountain in the background">
+        </section>
+        <section class="col-12">
+            <h2>Which city?</h2>
+            <p>I would like to visit the city of Rome.</p>
+            <p>Regarded as one of the world’s most beautiful cities, Rome lures travellers with its ancient history,
+                fabled cuisine and laid-back lifestyle. From the majestic Colosseum and intricately carved Trevi
+                Fountain to the Spanish Steps and Pantheon, the city’s architectural splendours provide a theatrical
+                backdrop for daily life. Locals still shop for fresh produce in cobblestone piazzas while nuns gather
+                over coffee and schoolchildren visit iconic artworks in the city’s many museums.
+            </p>
+            <img src="Rome@.jpg" alt="Photo of the city">
+        </section>
+        <section class="col-12">
+            <h2>A foreign language</h2>
+            <p>I would like to learn Italian.</p>
+            <p>Italian is a beautiful and musical language, and learning it would allow me to fully enjoy Italian culture and communicate with locals when I visit Italy.</p>
+            <table>
+                <tr>
+                    <th>English Phrase</th>
+                    <th>Italian</th>
+                </tr>
+                <tr>
+                    <td>Hello</td>
+                    <td>Ciao</td>
+                </tr>
+                <tr>
+                    <td>Thank you</td>
+                    <td>Grazie</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Come stai?</td>
+                </tr>
+                <tr>
+                    <td>Goodbye</td>
+                    <td>Arrivederci</td>
+                </tr>
+                <tr>
+                    <td>Yes</td>
+                    <td>Sì</td>
+                </tr>
+            </table>
+        </section>
+        <section class="col-12">
+            <h2>Favourite Subjects</h2>
+            <p>I completed my qualification at University of Johannesburg.</p>
+            <div class="subjects">
+                <div class="subject">
+                    <h3>Machine Learning</h3>
+                    <img src="stack.jpg" alt="Machine Learning">
+                    <p>Machine learning is a subset of artificial intelligence (AI) that focuses on building systems that can learn from and make decisions based on data. Instead of being explicitly programmed to perform a task, a machine learning model is trained on a large dataset, allowing it to identify patterns and make predictions or decisions without human intervention. This approach enables machines to improve their performance over time as they are exposed to more data. Machine learning is widely used in various applications such as image and speech recognition, recommendation systems, and autonomous vehicles.</p>
+                </div>
+                <div class="subject">
+                    <h3>Agile Rapid Skills</h3>
+                    <img src="OIP.jpg" alt="Agile Rapid Skills">
+                    <p>This module is essential for project managers, team leaders, developers, and anyone involved in project delivery who wants to improve their ability to manage and execute projects using Agile methodologies. The Agile Skills Acquisition module is designed to equip individuals with the knowledge and practical skills needed to effectively implement and manage Agile methodologies in various project settings.</p>
+                </div>
+                <div class="subject">
+                    <h3>Full Stack Web Development</h3>
+                    <img src="full stack.jpg" alt="Full Stack Web Development">
+                    <p>Full stack web development involves working on both the front-end and back-end aspects of web applications. A full stack web developer is proficient in a variety of skills and technologies needed to build a complete web application from start to finish. This includes everything from designing user interfaces to managing databases and server-side logic.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="grid">
+        <div class="col-12">
+            <p>&copy; 2024 Freddy's Camp</p>
+        </div>
+    </footer>
+</body>
+
+</html>

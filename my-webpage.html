@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .background-city {
+            background-image: url("Rome@.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .background-city h2, .background-city p {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .subject {
+            background: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(33% - 40px);
+            box-sizing: border-box;
+        }
+
+        .subject img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .subject {
+                flex-basis: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .subject {
+                flex-basis: 100%;
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Freddy's Camp</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-webpage-grid.html">SimpleGrid Version</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Tshepiso Freddy Thosago.</p>
+            <img src="cape town.jpg" alt="Photo ofTable Mountain in the background">
+        </section>
+        <section class="background-city">
+            <h2>Which city?</h2>
+            <p>I would like to visit the City of Rome.</p>
+            <p>Regarded as one of the world’s most beautiful cities, Rome lures travellers with its ancient history, fabled cuisine, and laid-back lifestyle. From the majestic Colosseum and intricately carved Trevi Fountain to the Spanish Steps and Pantheon, the city’s architectural splendours provide a theatrical backdrop for daily life. Locals still shop for fresh produce in cobblestone piazzas while nuns gather over coffee and schoolchildren visit iconic artworks in the city’s many museums.</p>
+        </section>
+        <section>
+            <h2>A foreign language</h2>
+            <p>I would like to learn Italian.</p>
+            <p>Italian is a beautiful and musical language, and learning it would allow me to fully enjoy Italian culture and communicate with locals when I visit Italy.</p>
+            <table>
+                <tr>
+                    <th>English Phrase</th>
+                    <th>Italian Phrase</th>
+                </tr>
+                <tr>
+                    <td>Hello</td>
+                    <td>Ciao</td>
+                </tr>
+                <tr>
+                    <td>Thank you</td>
+                    <td>Grazie</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Come stai?</td>
+                </tr>
+                <tr>
+                    <td>Goodbye</td>
+                    <td>Arrivederci</td>
+                </tr>
+                <tr>
+                    <td>Yes</td>
+                    <td>Sì</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Favourite Subjects</h2>
+            <p>I completed my qualification at the University of Johannesburg.</p>
+            <div class="subjects">
+                <div class="subject">
+                    <h3>Machine Learning</h3>
+                    <img src="stack.jpg" alt="Subject 1">
+                    <p>Machine learning is a subset of artificial intelligence (AI) that focuses on building systems that can learn from and make decisions based on data. Instead of being explicitly programmed to perform a task, a machine learning model is trained on a large dataset, allowing it to identify patterns and make predictions or decisions without human intervention. This approach enables machines to improve their performance over time as they are exposed to more data. Machine learning is widely used in various applications such as image and speech recognition, recommendation systems, and autonomous vehicles.</p>
+                </div>
+                <div class="subject">
+                    <h3>Agile Rapid Skills</h3>
+                    <img src="OIP.jpg" alt="Subject 2">
+                    <p>This module is essential for project managers, team leaders, developers, and anyone involved in project delivery who wants to improve their ability to manage and execute projects using Agile methodologies. The Agile Skills Acquisition module is designed to equip individuals with the knowledge and practical skills needed to effectively implement and manage Agile methodologies in various project settings.</p>
+                </div>
+                <div class="subject">
+                    <h3>Full Stack Web Development</h3>
+                    <img src="full stack.jpg" alt="Subject 3">
+                    <p>Full stack web development involves working on both the front-end and back-end aspects of web applications. A full stack web developer is proficient in a variety of skills and technologies needed to build a complete web application from start to finish. This includes everything from designing user interfaces to managing databases and server-side logic.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Freddy's Camp</p>
+    </footer>
+</body>
+
+</html>
